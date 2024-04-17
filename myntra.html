@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kuldip Loots</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="assets/footer.css">
+  <link rel="stylesheet" href="assets/mynta.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+</head>
+
+<body>
+  <div class="nav">
+    <p class="LOGO">Kuldip Loots</p>
+    <div class="links">
+      <a href="dealer.html" class="del">Deals Finder</a>
+      <!-- <a href="index.html">Home</a>
+      <a href="">CONTACT</a> -->
+    </div>
+  </div>
+  <div class="finders">
+    <a href="index.html" class="finders-btn"><img src="/assets/images/flipkart-icon.png" alt=""
+        class="finders-img">Flipkart
+      Deals Finder</a>
+    <a href="myntra.html" class="finders-btn"><img src="/assets/images/myntra-icon.png" alt=""
+        class="finders-img">Myntra Deals
+      Finder</a>
+    <a href="amazon.html" class="finders-btn"><img src="/assets/images/deal-gift-96.png" alt=""
+        class="finders-img">Amazon
+      Deals Finder</a>
+  </div>
+  <div class="main">
+    <div class="firstcontainer">
+      <h1>Get instant savings with Myntra deals finder</h1>
+      <p>Upto 70% discount on Myntra deals finder</p>
+      <img src="assets/images/flipkart.png" alt="error">
+    </div>
+    <div class="container">
+      <form id="filterForm">
+        <h1>Myntra Deals Finder</h1>
+        <div class="asu-main">
+          <div class="asu-first">
+            <img class="search-icon-gif" src="assets/images/icons8-search.gif" alt="">
+            <p>DEALS FINDER</p>
+          </div>
+          <!-- <div class="asu-second">
+              <div class="onoffswitch">
+                <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch">
+                <label class="onoffswitch-label" for="myonoffswitch">
+                  <span class="onoffswitch-inner"></span>
+                  <span class="onoffswitch-switch"></span>
+                </label>
+              </div>
+              <label for="flipkartAssured"><img src="assets/images/fa_62673a.png" class="flip-assured" alt=""></label>
+            </div> -->
+        </div>
+        <label for="product">Product:</label>
+        <input type="text" id="product" placeholder="Search for Products, Brands or Categories">
+        <!-- <p class="pro">or Select with</p>
+        <label for="category">Select Category:</label>
+        <select id="category">
+          <option value="">-select-</option>
+          <option value="laptops">Laptops</option>
+          <option value="mobiles">Mobiles</option>
+          <option value="electronics">Electronics</option> -->
+        <!-- Add more options as needed -->
+        </select>
+        <div class="price-range-main">
+          <div class="price-range-head">
+            <h2>Budget:</h2>
+            <p class="advanced">Discount between 
+              <b class="greno">20%</b>
+              and 
+              <b class="greno">70%</b>
+            </p>
+          </div>
+          <div class="slider">
+            <div class="progress"></div>
+          </div>
+          <div class="range-input">
+            <input type="range" class="range-min" min="0" max="100" value="20" step="10">
+            <input type="range" class="range-max" min="0" max="100" value="70" step="10">
+          </div>
+        </div>
+        <label for="price" class="price-range-label">Price Range</label>
+        <div class="min-max">
+          <input type="text" id="minBudget" placeholder="Min Price">
+          <input type="text" id="maxBudget" placeholder="Max Price">
+
+        </div>
+
+        <label for="anystuff">Sort by</label>
+        <div class="custom-control custom-radio inline-block pl-0">
+
+          <input type="radio" style="display: none;" class="btn-check" name="shortbySec-outlined" id="shortbySec-1"
+            value="recommended" autocomplete="off" checked="">
+          <label class="btn btn-outline-success" for="shortbySec-1">Recommended</label>
+          <input type="radio" style="display: none;" class="btn-check" name="shortbySec-outlined" id="shortbySec-3"
+            value="price_asc" autocomplete="off">
+          <label class="btn btn-outline-success" for="shortbySec-3">Low to
+            High</label>
+          <input type="radio" style="display: none;" class="btn-check" name="shortbySec-outlined" id="shortbySec-4"
+            value="price_desc" autocomplete="off">
+          <label class="btn btn-outline-success" for="shortbySec-4">High
+            to Low</label>
+          <input type="radio" style="display: none;" class="btn-check" name="shortbySec-outlined" id="shortbySec-5"
+            value="new" autocomplete="off">
+          <label class="btn btn-outline-success" for="shortbySec-5">What's New
+            First</label>
+          <input type="radio" style="display: none;" class="btn-check" name="shortbySec-outlined" id="shortbySec-2"
+            value="popularity" autocomplete="off">
+          <label class="btn btn-outline-success" for="shortbySec-2">Popularity</label>
+          <input type="radio" style="display: none;" class="btn-check" name="shortbySec-outlined" id="shortbySec-6"
+            value="discount" autocomplete="off">
+          <label class="btn btn-outline-success" for="shortbySec-6">Better Discount</label>
+          <input type="radio" style="display: none;" class="btn-check" name="shortbySec-outlined" id="shortbySec-7"
+            value="Customer%20Rating" autocomplete="off">
+          <label class="btn btn-outline-success" for="shortbySec-7">Customer Rating</label>
+        </div>
+
+        <!-- <label for="discount">Discount:</label>
+        <select id="discount" class="dropdown">
+          <option value="">-select-</option>
+          <option value="30%">30% or more</option>
+          <option value="40%">40% or more</option>
+          <option value="50%">50% or more</option>
+          <option value="60%">60% or more</option>
+          <option value="70%">70% or more</option>
+        </select> -->
+        <!-- <input type="checkbox" id="flipkartAssured"> -->
+        <!-- <div class="onoffswitch">
+                  <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch">
+                  <label class="onoffswitch-label" for="myonoffswitch">
+                      <span class="onoffswitch-inner"></span>
+                      <span class="onoffswitch-switch"></span>
+                  </label>
+              </div> -->
+        <!-- price range selector -->
+
+        <button id="copyButton" onclick="copyLink1()">Copy Link</button>
+        <button id="submitBtn" class="apply-filter-btn btn1" onclick="redirectToMyntra()" disabled>Find Deals</button>
+    </div>
+    </form>
+  </div>
+  <!-- Footer -->
+
+  <footer>
+    <div class="content">
+      <div class="top">
+        <div class="logo-details">
+          <i class="fab fa-slack"></i>
+          <span class="logo_name">kuldiplootdeals.com</span>
+        </div>
+        <div class="media-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="link-boxes">
+        <ul class="box">
+          <li class="link_name">Company</li>
+          <li><a href="dealer.html">Deal finder</a></li>
+        </ul>
+        <ul class="box">
+          <li class="link_name">Services</li>
+          <li><a href="index.html">Flipkart Deals Finder</a></li>
+          <li><a href="myntra.html">Myntra Deals Finder</a></li>
+          <li><a href="amazon.html">Amazon Deals Finder</a></li>
+
+        </ul>
+        <ul class="box">
+          <li class="link_name">Developer</li>
+          <li><a href="http://nirbhay.mooo.com">Portfolio</a></li>
+          <li><a href="https://www.instagram.com/official_nirbhayrana?igsh=M2x5bWliYXN6dDQz">Instagram</a></li>
+        </ul>
+
+        
+      </div>
+    </div>
+    <div class="bottom-details">
+      <div class="bottom_text">
+        <span class="copyright_text">Copyright © 2024 <a href="#">kuldiplootdeals.com</a>All rights reserved</span>
+        <span class="policy_terms">
+          <a href="#">Privacy policy</a>
+          <a href="#">Terms & condition</a>
+        </span>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</body>
+
+</html>
