@@ -1,0 +1,33 @@
+html,body{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #dc3545, #ffffff);
+    background-repeat: no-repeat;
+}
+.slider .progress{
+    background: linear-gradient(to left, #dc3545, #ffffff);
+}
+.apply-filter-btn{
+    background: #dc3545;
+    border: #dc3545;
+}
+select.dropdown{
+    border: 2px solid #dc3545;
+}
+.asu-first{
+    border-bottom: 2px solid #dc3545;
+}
+.finders{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    /* background-color: #ff3f6c; */
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    padding: 5px 5px;
+}
+.custom-control .btn-check:checked+.btn-outline-success {
+    border: 1px solid #ff3f6c ;
+    background-color: #ffe7ed ;
+}

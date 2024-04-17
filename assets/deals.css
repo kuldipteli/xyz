@@ -1,0 +1,138 @@
+/* html,body{
+    background-image: url(images/4fc79540fa40a155c4ec3a4969d110c4.gif);
+    background-size: 2100px;
+    
+} */
+
+html,body{
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    /* background-size: auto; */
+}
+body{
+    height: 100%;
+    width: 100%;
+    background-color: white;
+}
+/* .del::after{
+    content: "New";
+    position: absolute;
+    top: 6px;
+    left: 10px;
+    background-color: yellow;
+    margin-right: 4px;
+} */
+.whole-father{
+    width: 100%;
+    /* height: 100%; */
+    text-decoration: none;
+    padding: 10px 45px;
+    background-color: white;
+}
+.whole-banner{
+    width: 100%;
+    height: 200px;
+}
+.three-cards{
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    text-decoration: none;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+.whole-card-ptn{
+    height: 150px;
+    border-radius: 10px;
+    width: 300px;
+    background-color: red;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    box-shadow: 2px 5px 25px rgba(0, 0, 0, .15);
+    transition: all ease-in-out 0.5s;
+}
+.whole-card-son{
+    position: relative;
+    bottom: -40px;
+    right: -40px;
+    height: 150px;
+    border-radius: 10px;
+    padding: 0px 10px;
+    width: 300px;
+    background-color: white;
+    cursor: pointer;
+    box-shadow: 2px 5px 25px rgba(0, 0, 0, .15);
+    transition: all ease-in-out 0.5s;
+    text-decoration: none;
+}
+.whole-card-son-logo{
+    height: 40px;
+    width: 40px;
+   
+}
+.whole-card-son-logo-container{
+    position: relative;
+    /* left: 10px; */
+    top: -20px;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 100px;
+    background-color: white;
+    transition: all ease-in-out 0.5s;
+    box-shadow: 2px 5px 25px rgba(0, 0, 0, .15);
+}
+.arro-png{
+    transition: all ease-in-out 0.5s;
+}
+.whole-card-son-name{
+    display: flex;
+    justify-content: space-between;
+}
+.whole-card-ptn:hover .whole-card-son{
+    right: -20px;
+    bottom: -20px;
+    
+}
+.whole-card-ptn:hover .whole-card-son-logo-container{
+    /* right: -20px; */
+    top: -10px;
+    
+}
+.whole-card-ptn:hover .arro-png{
+   transform: rotate(280deg);
+    
+}
+#wh-first{
+    background: linear-gradient(to right, #007bff , #dc3545);
+}
+#wh-second{
+    background: linear-gradient(45deg, white , #dc3545);
+}
+#wh-third{
+    background: linear-gradient(45deg, white , #fd7e14);
+}
+.text-container{
+    line-height: 30px;
+    margin: 30px;
+    
+}
+.txt-non{
+    color: black;
+    font-size: 20px;
+    
+}
+.kuldip-eror{
+    text-decoration: none;
+}
+
+
+footer{
+    margin: auto auto;
+}
