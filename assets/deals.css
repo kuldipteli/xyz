@@ -151,6 +151,9 @@ footer{
         gap:60px;
     }
     .txt-non{
-        font-size:12px;
+        font-size:smaller;
+    }
+    .whole-father{
+        padding:10px 20px;
     }
 }
