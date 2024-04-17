@@ -605,3 +605,11 @@ input[type="range"]::-moz-range-thumb{
         font-size:xx-small;
     }
 }
+@media (max-width:600px){
+    .nav{
+        padding-left:10px;
+        padding-right:50px;
+        padding-top:0px;
+        padding-bottom:0px;
+    }
+}
