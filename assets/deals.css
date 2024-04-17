@@ -138,16 +138,19 @@ footer{
 }
 @media (max-width:600px){
     .whole-card-ptn{
-        height:100px;
-        width:200px;
+        height:120px;
+        width:220px;
     }
     .whole-card-son{
-        height:100px;
-        width:200px;
+        height:120px;
+        width:220px;
         bottom: -27px;
         right: -27px;
     }
     .three-cards{
         gap:60px;
+    }
+    .txt-non{
+        font-size:12px;
     }
 }
