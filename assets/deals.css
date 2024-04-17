@@ -136,3 +136,16 @@ body{
 footer{
     margin: auto auto;
 }
+@media (max-width:600px){
+    .whole-card-ptn{
+        height:100px;
+        width:200px;
+    }
+    .whole-card-son{
+        height:100px;
+        width:200px;
+    }
+    .three-cards{
+        gap:60px;
+    }
+}
