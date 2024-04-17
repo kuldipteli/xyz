@@ -144,6 +144,8 @@ footer{
     .whole-card-son{
         height:100px;
         width:200px;
+        bottom: -27px;
+        right: -27px;
     }
     .three-cards{
         gap:60px;
