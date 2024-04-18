@@ -420,7 +420,7 @@ input[type="range"]::-moz-range-thumb{
 .onoffswitch-inner:before {
     content: "";
     padding-left: 10px;
-    background-color: #34A7C1;
+    background-color: #007bff;
     color: #FFFFFF;
     transition: background-color 0.3s ease-in-out; /* Updated transition */
 }
