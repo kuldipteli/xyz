@@ -613,6 +613,7 @@ input[type="range"]::-moz-range-thumb{
         padding-bottom:0px;
     }
     .main{
-        margin-top:10px;
+        
+        margin-top: 0px;
     }
 }
