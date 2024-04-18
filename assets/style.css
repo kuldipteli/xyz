@@ -453,7 +453,7 @@ input[type="range"]::-moz-range-thumb{
 }
 
 .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner:after {
-    background-color: #34A7C1; /* Background color when checked */
+    background-color: #007bff ; /* Background color when checked */
 }
 
 .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
