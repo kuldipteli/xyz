@@ -316,7 +316,7 @@ function redirectToAmazon() {
     var flipkartAssured = document.getElementById('myonoffswitch').checked ? "&rh=p_85%3A10440599031%2" : "";
 
     // Construct the URL with parameters
-    var url = "https://www.amazon.in/s?k=" + product + "&rh=p_36%3A"+ minBudget+"00-"+ maxBudget+"00" + flipkartAssured +"Cp_n_pct-off-with-tax%3A"+rangeInput[0].value+"-"+ rangeInput[1].value   + "&s=" + sorter + "&tag=123offer-21";
+    var url = "https://www.amazon.in/s?k=" + product + "&rh=p_36%3A"+ minBudget+"00-"+ maxBudget+"00" + flipkartAssured +"Cp_n_pct-off-with-tax%3A"+rangeInput[0].value+"-"+ discount   + "&s=" + sorter + "&tag=123offer-21";
     // postman api
     // fetch('https://earn.pe/api/affsol/conv.php', {
     //     method: 'POST',
