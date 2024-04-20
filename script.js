@@ -151,14 +151,15 @@ form.addEventListener("input", function () {
     }
 });
 function redirectToFlipkart() {
+    var discount = rangeInput[1].value;
     // alert("please wait while we are redirecting you")
     if (rangeInput[1].value >= 70) {
-        rangeInput[1].value = 70;
+        discount = 70;
     }
     var product = document.getElementById('product').value;
     var minBudget = document.getElementById('minBudget').value;
     var maxBudget = document.getElementById('maxBudget').value;
-    var discount = rangeInput[1].value;
+
     var sorter;
     if (document.getElementById('shortbySec-1').checked) {
         sorter = document.getElementById('shortbySec-1').value
@@ -211,14 +212,14 @@ function redirectToFlipkart() {
     console.log(flipkartAssured ? "tulu" : "pulu")
 }
 function redirectToMyntra() {
+    var discount = rangeInput[1].value;
     // alert("please wait while we are redirecting you")
-    if (rangeInput[1].value >= 80) {
-        rangeInput[1].value = 80;
+    if (rangeInput[1].value >= 70) {
+        discount = 70;
     }
     var product = document.getElementById('product').value;
     var minBudget = document.getElementById('minBudget').value;
     var maxBudget = document.getElementById('maxBudget').value;
-    var discount = rangeInput[1].value ;
     var sorter;
     if(minBudget == "" || maxBudget == ""){
         minBudget = 0;
@@ -281,9 +282,10 @@ function redirectToMyntra() {
     // console.log(flipkartAssured ? "tulu" : "pulu")
 }
 function redirectToAmazon() {
+    var discount = rangeInput[1].value;
     // alert("please wait while we are redirecting you")
     if (rangeInput[1].value >= 70) {
-        rangeInput[1].value = 70;
+        discount = 70;
     }
     var product = document.getElementById('product').value;
     var minBudget = document.getElementById('minBudget').value;
@@ -292,7 +294,6 @@ function redirectToAmazon() {
         minBudget= 0;
         maxBudget= 99999;
     }
-    var discount = rangeInput[1].value;
     var sorter;
     if (document.getElementById('shortbySec-1').checked) {
         sorter = document.getElementById('shortbySec-1').value
