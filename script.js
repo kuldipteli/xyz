@@ -153,7 +153,7 @@ form.addEventListener("input", function () {
 function redirectToFlipkart() {
     var discount = rangeInput[1].value;
     // alert("please wait while we are redirecting you")
-    if (rangeInput[1].value >= 70) {
+    if (rangeInput[0].value >= 70) {
         discount = 70;
     }
     var product = document.getElementById('product').value;
@@ -178,7 +178,7 @@ function redirectToFlipkart() {
     }
     console.log(discount);
     console.log(rangeInput[1].value + "%");
-    var discount = rangeInput[1].value + "%";
+    var discount = rangeInput[0].value + "%";
     var flipkartAssured = document.getElementById('myonoffswitch').checked ? "true" : "";
 
     // Construct the URL with parameters
@@ -212,9 +212,9 @@ function redirectToFlipkart() {
     console.log(flipkartAssured ? "tulu" : "pulu")
 }
 function redirectToMyntra() {
-    var discount = rangeInput[1].value;
+    var discount = rangeInput[0].value;
     // alert("please wait while we are redirecting you")
-    if (rangeInput[1].value >= 70) {
+    if (rangeInput[0].value >= 70) {
         discount = 70;
     }
     var product = document.getElementById('product').value;
@@ -249,11 +249,11 @@ function redirectToMyntra() {
     }
     console.log(discount);
     console.log(rangeInput[1].value + "%");
-    var discount = rangeInput[1].value ;
+     // var discount = rangeInput[0].value ;
     // var flipkartAssured = document.getElementById('myonoffswitch').checked ? "true" : "";
 
     // Construct the URL with parameters
-    var url = 'https://www.myntra.com/' + product + "?rawQuery=" + encodeURIComponent(product) + "&rf=Discount%20Range%3A"+ discount +".0_100.0_"+ discount +".0%20TO%20100.0" + "%3A%3APrice%3A"+ minBudget +".0_"+ maxBudget +".0_"+ minBudget +".0+TO+"+ maxBudget +".0&sort=" + sorter ;
+    var url = 'https://www.myntra.com/' + encodeURIComponent(product) + "?rawQuery=" + encodeURIComponent(product) + "&rf=Discount%20Range%3A"+ discount +".0_100.0_"+ discount +".0%20TO%20100.0" + "%3A%3APrice%3A"+ minBudget +".0_"+ maxBudget +".0_"+ minBudget +".0+TO+"+ maxBudget +".0&sort=" + sorter ;
     // postman api
     fetch('https://earn.pe/api/affsol/conv.php', {
         method: 'POST',
@@ -283,10 +283,16 @@ function redirectToMyntra() {
 }
 function redirectToAmazon() {
     var discount = rangeInput[1].value;
-    // alert("please wait while we are redirecting you")
+    var discount1 = rangeInput[0].value;
     if (rangeInput[1].value >= 70) {
-        discount = 70;
+        discount  = 70;
     }
+    if (rangeInput[0].value >= 70) {
+        discount1 = 70;
+    }
+    
+    // alert("please wait while we are redirecting you")
+    
     var product = document.getElementById('product').value;
     var minBudget = document.getElementById('minBudget').value;
     var maxBudget = document.getElementById('maxBudget').value;
@@ -316,7 +322,7 @@ function redirectToAmazon() {
     var flipkartAssured = document.getElementById('myonoffswitch').checked ? "&rh=p_85%3A10440599031%2" : "";
 
     // Construct the URL with parameters
-    var url = "https://www.amazon.in/s?k=" + product + "&rh=p_36%3A"+ minBudget+"00-"+ maxBudget+"00" + flipkartAssured +"Cp_n_pct-off-with-tax%3A"+rangeInput[0].value+"-"+ discount   + "&s=" + sorter + "&tag=123offer-21";
+    var url = "https://www.amazon.in/s?k=" + product + "&rh=p_36%3A"+ minBudget+"00-"+ maxBudget+"00" + flipkartAssured +"%2Cp_n_pct-off-with-tax%3A"+ discount1 +"-"+ discount   + "&s=" + sorter + "&tag=123offer-21";
     // postman api
     // fetch('https://earn.pe/api/affsol/conv.php', {
     //     method: 'POST',
@@ -411,14 +417,15 @@ function redirectToAmazon() {
             event.preventDefault();
     })
     function copyLink() {
-        if (rangeInput[1].value >= 70) {
-            rangeInput[1].value = 70;
-        }
-        
+       var discount = rangeInput[1].value + "%";
+       // alert("please wait while we are redirecting you")
+       if (rangeInput[0].value >= 70) {
+          discount = 70 + "%";
+       }
         var product = document.getElementById('product').value;
         var minBudget = document.getElementById('minBudget').value;
         var maxBudget = document.getElementById('maxBudget').value;
-        var discount = rangeInput[1].value;
+        
         var sorter;
         if (document.getElementById('shortbySec-1').checked) {
             sorter = document.getElementById('shortbySec-1').value
@@ -437,7 +444,7 @@ function redirectToAmazon() {
         }
         console.log(discount);
         console.log(rangeInput[1].value + "%");
-        var discount = rangeInput[1].value + "%";
+        // var discount = rangeInput[1].value + "%";
         var flipkartAssured = document.getElementById('myonoffswitch').checked ? "true" : "";
     
         // Construct the URL with parameters
@@ -493,13 +500,15 @@ function redirectToAmazon() {
       }
       function copyLink1() {
         // alert("please wait while we are redirecting you")
-        if (rangeInput[1].value >= 80) {
-            rangeInput[1].value = 80;
+        var discount = rangeInput[0].value;
+        // alert("please wait while we are redirecting you")
+        if (rangeInput[0].value >= 70) {
+            discount = 70;
         }
         var product = document.getElementById('product').value;
         var minBudget = document.getElementById('minBudget').value;
         var maxBudget = document.getElementById('maxBudget').value;
-        var discount = rangeInput[1].value ;
+       
         var sorter;
         if(minBudget == "" || maxBudget == ""){
             minBudget = 0;
@@ -529,11 +538,10 @@ function redirectToAmazon() {
         }
         console.log(discount);
         console.log(rangeInput[1].value + "%");
-        var discount = rangeInput[1].value ;
         // var flipkartAssured = document.getElementById('myonoffswitch').checked ? "true" : "";
     
         // Construct the URL with parameters
-        var url = 'https://www.myntra.com/' + product + "?rawQuery=" + encodeURIComponent(product) + "&rf=Discount%20Range%3A"+ discount +".0_100.0_"+ discount +".0%20TO%20100.0" + "%3A%3APrice%3A"+ minBudget +".0_"+ maxBudget +".0_"+ minBudget +".0+TO+"+ maxBudget +".0&sort=" + sorter ;
+         var url = 'https://www.myntra.com/' + encodeURIComponent(product) + "?rawQuery=" + encodeURIComponent(product) + "&rf=Discount%20Range%3A"+ discount +".0_100.0_"+ discount +".0%20TO%20100.0" + "%3A%3APrice%3A"+ minBudget +".0_"+ maxBudget +".0_"+ minBudget +".0+TO+"+ maxBudget +".0&sort=" + sorter ;
         // postman api
         fetch('https://earn.pe/api/affsol/conv.php', {
             method: 'POST',
@@ -571,9 +579,15 @@ function redirectToAmazon() {
     }
     function copyLink2() {
         // alert("please wait while we are redirecting you")
-        if (rangeInput[1].value >= 70) {
-            rangeInput[1].value = 70;
-        }
+         var discount = rangeInput[1].value;
+         var discount1 = rangeInput[0].value;
+         if (rangeInput[1].value >= 70) {
+             discount  = 70;
+         }
+         if (rangeInput[0].value >= 70) {
+              discount1 = 70;
+         }
+    
         var product = document.getElementById('product').value;
         var minBudget = document.getElementById('minBudget').value;
         var maxBudget = document.getElementById('maxBudget').value;
@@ -581,7 +595,7 @@ function redirectToAmazon() {
             minBudget= 0;
             maxBudget= 99999;
         }
-        var discount = rangeInput[1].value;
+        
         var sorter;
         if (document.getElementById('shortbySec-1').checked) {
             sorter = document.getElementById('shortbySec-1').value
@@ -604,7 +618,8 @@ function redirectToAmazon() {
         var flipkartAssured = document.getElementById('myonoffswitch').checked ? "&rh=p_85%3A10440599031%2" : "";
     
         // Construct the URL with parameters
-        var url = "https://www.amazon.in/s?k=" + product + "&rh=p_36%3A"+ minBudget+"00-"+ maxBudget+"00" + flipkartAssured +"Cp_n_pct-off-with-tax%3A"+rangeInput[0].value+"-"+ rangeInput[1].value   + "&s=" + sorter + "&tag=123offer-21";
+           var url = "https://www.amazon.in/s?k=" + product + "&rh=p_36%3A"+ minBudget+"00-"+ maxBudget+"00" + flipkartAssured +"%2Cp_n_pct-off-with-tax%3A"+ discount1 +"-"+ discount   + "&s=" + sorter + "&tag=123offer-21";
+        // postman api
         // postman api
         // fetch('https://earn.pe/api/affsol/conv.php', {
         //     method: 'POST',
