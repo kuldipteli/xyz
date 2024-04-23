@@ -284,9 +284,6 @@ function redirectToMyntra() {
 function redirectToAmazon() {
     var discount = rangeInput[1].value;
     var discount1 = rangeInput[0].value;
-    if (rangeInput[1].value >= 70) {
-        discount  = 70;
-    }
     if (rangeInput[0].value >= 70) {
         discount1 = 70;
     }
