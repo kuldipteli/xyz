@@ -595,9 +595,7 @@ input[type="range"]::-moz-range-thumb{
     .LOGO{
         font-size: small;
     }
-    .del{
-        font-size: small;
-    }
+    
     
 }
 @media (max-width:398px) {
