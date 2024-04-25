@@ -594,6 +594,7 @@ input[type="range"]::-moz-range-thumb{
         padding-right:50px;
         padding-top:0px;
         padding-bottom:0px;
+        height: 50px;
     }
     .main{
         
