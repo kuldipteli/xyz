@@ -563,8 +563,8 @@ input[type="range"]::-moz-range-thumb{
     height: 200px;
 }
 .m10{
-    margin-top:60px;
-    height:60px;
+    margin-top:20px;
+    height:80px;
 }
 @keyframes highlighter {
     0%{
