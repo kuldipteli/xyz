@@ -18,11 +18,11 @@ let btn1 = document.getElementsByClassName('btn1')
 
 function hurrey(){
     if(panel.style.maxHeight == "0px"){
-        panel.style.maxHeight = "1000px"
+        panel.style.maxHeight = "3000px"
         console.log(panel.style.maxHeight)
     }
     else if(panel.style.maxHeight == 0){
-        panel.style.maxHeight = "1000px"
+        panel.style.maxHeight = "3000px"
     }
     else{
         panel.style.maxHeight = "0px"
