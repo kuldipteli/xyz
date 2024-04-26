@@ -616,4 +616,7 @@ input[type="range"]::-moz-range-thumb{
     .whole-banner{
         height: 40px
     }
+    .m10{
+        height:60px
+    }
 }
