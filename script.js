@@ -18,11 +18,11 @@ let btn1 = document.getElementsByClassName('btn1')
 
 function hurrey(){
     if(panel.style.maxHeight == "0px"){
-        panel.style.maxHeight = "3000px"
+        panel.style.maxHeight = "4000px"
         console.log(panel.style.maxHeight)
     }
     else if(panel.style.maxHeight == 0){
-        panel.style.maxHeight = "3000px"
+        panel.style.maxHeight = "4000px"
     }
     else{
         panel.style.maxHeight = "0px"
@@ -31,10 +31,10 @@ function hurrey(){
 }
 function hurrey2(){
     if(panel2.style.maxHeight == "0px"){
-        panel2.style.maxHeight = "1000px"
+        panel2.style.maxHeight = "4000px"
     }
     else if(panel2.style.maxHeight == 0){
-        panel2.style.maxHeight = "1000px"
+        panel2.style.maxHeight = "4000px"
     }
     else{
         panel2.style.maxHeight = "0px"
@@ -42,10 +42,10 @@ function hurrey2(){
 }
 function hurrey3(){
     if(panel3.style.maxHeight == "0px"){
-        panel3.style.maxHeight = "1000px"
+        panel3.style.maxHeight = "4000px"
     }
     else if(panel3.style.maxHeight == 0){
-        panel3.style.maxHeight = "1000px"
+        panel3.style.maxHeight = "4000px"
     }
     else{
         panel3.style.maxHeight = "0px"
