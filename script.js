@@ -192,7 +192,7 @@ function redirectToFlipkart() {
         body: new URLSearchParams({
             data: url,
             token: '0AueEu4lCEMNs4EUTqzRKDtSqmbvQTC1',
-            mobile_no: '6354176209',
+            mobile_no: '8849494371',
             url_shorten_type: 'dl',
         }),
     })
@@ -263,7 +263,7 @@ function redirectToMyntra() {
         body: new URLSearchParams({
             data: url,
             token: '0AueEu4lCEMNs4EUTqzRKDtSqmbvQTC1',
-            mobile_no: '6354176209',
+            mobile_no: '8849494371',
             url_shorten_type: 'dl',
         }),
     })
@@ -455,7 +455,7 @@ function redirectToAmazon() {
             body: new URLSearchParams({
                 data: url,
                 token: '0AueEu4lCEMNs4EUTqzRKDtSqmbvQTC1',
-                mobile_no: '6354176209',
+                mobile_no: '8849494371',
                 url_shorten_type: 'dl',
             }),
         })
@@ -548,7 +548,7 @@ function redirectToAmazon() {
             body: new URLSearchParams({
                 data: url,
                 token: '0AueEu4lCEMNs4EUTqzRKDtSqmbvQTC1',
-                mobile_no: '6354176209',
+                mobile_no: '8849494371',
                 url_shorten_type: 'dl',
             }),
         })
