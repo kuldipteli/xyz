@@ -3,45 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Get ready for the Upcoming Flipkart Sale of June 2025 and Upcoming Flipkart Sale of July 2025! Sales are coming soon at June end or July start. Join Kuldeep Loot Deals on Telegram for daily discounts—no need to wait!">
-    <meta name="keywords" content="Upcoming Flipkart Sale of June 2025, Upcoming Flipkart Sale of July 2025, Flipkart sale 2025, Flipkart discounts, Kuldeep Loot Deals, Telegram shopping Flipkart, Flipkart deals today">
+    <meta name="description" content="Get ready for the Upcoming Flipkart Sale of June 2025 and Upcoming Flipkart Sale of July 2025! Expected at June end or July start, these sales offer huge discounts. Join Kuldeep Loot Deals on Telegram for daily Flipkart deals and save today, June 17, 2025!">
+    <meta name="keywords" content="Upcoming Flipkart Sale of June 2025, Upcoming Flipkart Sale of July 2025, Flipkart sale 2025, Flipkart Big Billion Days 2025 deals, Flipkart discounts, Kuldeep Loot Deals, Telegram shopping Flipkart, Flipkart deals today, best Flipkart deals 2025">
     <meta name="author" content="Kuldeep Loot Deals">
     <meta name="robots" content="index, follow">
-    <title>Upcoming Flipkart Sale of June & July 2025: Get Discounts Now!</title>
-    <link rel="stylesheet" href="assets/footer.css">
-    <script type="application/ld+json">
+    <title>Upcoming Flipkart Sale of June & July 2025: Save Big Now!</title>
+    <script type="application/ld+json" id="juneSaleSchema">
     {
         "@context": "https://schema.org",
-        "@type": "Event",
+        "@type": "SaleEvent",
         "name": "Upcoming Flipkart Sale of June 2025",
         "description": "Join Kuldeep Loot Deals to prepare for the Upcoming Flipkart Sale of June 2025, starting soon at the end of June. Get daily discounts now on Telegram!",
-        "startDate": "2025-06-30",
-        "endDate": "2025-07-02",
+        "startDate": "2025-06-29",
+        "endDate": "2025-06-30",
         "location": {
             "@type": "VirtualLocation",
-            "url": "https://flipkart.com"
+            "name": "Flipkart India Online Sale",
+            "url": "https://t.me/Kuldip_Loot_Deals_Flipkart"
         },
         "organizer": {
             "@type": "Organization",
-            "name": "Flipkart"
+            "name": "Flipkart",
+            "url": "https://flipkart.com"
+        },
+        "offers": {
+            "@type": "Offer",
+            "price": "34999",
+            "priceCurrency": "INR",
+            "availability": "https://schema.org/InStock"
         }
     }
     </script>
-    <script type="application/ld+json">
+    <script type="application/ld+json" id="julySaleSchema">
     {
         "@context": "https://schema.org",
-        "@type": "Event",
+        "@type": "SaleEvent",
         "name": "Upcoming Flipkart Sale of July 2025",
         "description": "Prepare for the Upcoming Flipkart Sale of July 2025, starting at the beginning of July. Join Kuldeep Loot Deals on Telegram for daily Flipkart discounts!",
         "startDate": "2025-07-01",
         "endDate": "2025-07-03",
         "location": {
             "@type": "VirtualLocation",
-            "url": "https://flipkart.com"
+            "name": "Flipkart India Online Sale",
+            "url": "https://t.me/Kuldip_Loot_Deals_Flipkart"
         },
         "organizer": {
             "@type": "Organization",
-            "name": "Flipkart"
+            "name": "Flipkart",
+            "url": "https://flipkart.com"
+        },
+        "offers": {
+            "@type": "Offer",
+            "price": "399",
+            "priceCurrency": "INR",
+            "availability": "https://schema.org/InStock"
         }
     }
     </script>
@@ -170,6 +185,7 @@
             border-radius: 5px;
             cursor: pointer;
             font-weight: bold;
+            transition: background 0.3s ease;
         }
         .comparison-btn:hover {
             background: #fdd835;
@@ -178,6 +194,13 @@
             margin-top: 20px;
             font-size: 18px;
             font-weight: bold;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+        #comparisonResult.active {
+            background: #ffeb3b;
+            color: #8e24aa;
         }
         .telegram-cta {
             text-align: center;
@@ -199,6 +222,13 @@
         .telegram-btn:hover {
             background: #007bb5;
             transform: scale(1.05);
+        }
+        a {
+            color: #8e24aa;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -226,19 +256,19 @@
     </header>
     <div class="container">
         <h2>Upcoming Flipkart Sale of June 2025 & July 2025: Get Ready!</h2>
-        <p>Exciting news for Flipkart shoppers! The <strong>Upcoming Flipkart Sale of June 2025</strong> and <strong>Upcoming Flipkart Sale of July 2025</strong> are just around the corner. These sales are expected to start at the end of June or the beginning of July 2025, bringing massive discounts on smartphones, fashion, electronics, and more. But here’s the best part—you don’t have to wait for the sale to save big! Join <strong>Kuldeep Loot Deals</strong> on Telegram to get the best Flipkart discounts every day, right now on June 16, 2025!</p>
+        <p>Exciting news for Flipkart shoppers! The <strong>Upcoming Flipkart Sale of June 2025</strong> and <strong>Upcoming Flipkart Sale of July 2025</strong> are just around the corner. These sales are expected to start at the end of June or the beginning of July 2025, bringing massive discounts on smartphones, fashion, electronics, and more. But here’s the best part—you don’t have to wait for the sale to save big! Join <strong>Kuldeep Loot Deals</strong> on Telegram to get the best Flipkart discounts every day, right now on <span id="currentDate">June 17, 2025</span>!</p>
 
         <div class="telegram-cta">
             <a href="https://t.me/Kuldip_Loot_Deals_Flipkart" class="telegram-btn">Join for Daily Flipkart Discounts</a>
         </div>
 
         <h2>Countdown to the Upcoming Flipkart Sale of June 2025</h2>
-        <div class="sale-countdown" id="saleCountdown">Time Left Until June 30, 2025: Loading...</div>
-        <p>The <strong>Upcoming Flipkart Sale of June 2025</strong> is expected to kick off around June 30, 2025. This sale will likely feature up to 80% off on various categories, including:</p>
+        <div class="sale-countdown" id="saleCountdown">Time Left Until June 29, 2025: Loading...</div>
+        <p>The <strong>Upcoming Flipkart Sale of June 2025</strong> is expected to kick off around June 29, 2025. This sale will likely feature up to 80% off on various categories, including:</p>
         <p><strong>1. Smartphones:</strong> Discounts on iPhones, Samsung Galaxy, and more—expect deals like 50% off on the iPhone 14.</p>
         <p><strong>2. Fashion:</strong> Up to 70% off on men’s and women’s clothing, including t-shirts, jeans, and ethnic wear.</p>
         <p><strong>3. Electronics:</strong> Laptops, headphones, and smartwatches at unbeatable prices—think 60% off on Boat Airdopes.</p>
-        <p>Don’t wait until June 30! Join our Telegram channel to get similar discounts <strong>today</strong>.</p>
+        <p>Don’t wait until June 29! Join our Telegram channel to get similar discounts <strong>today</strong>.</p>
 
         <h2>Upcoming Flipkart Sale of July 2025: What to Expect</h2>
         <p>Following closely, the <strong>Upcoming Flipkart Sale of July 2025</strong> is expected to start around July 1, 2025, and may run for a few days. This sale is likely to coincide with seasonal promotions, offering even deeper discounts. Here’s a sneak peek at what might be on offer:</p>
@@ -268,7 +298,7 @@
         <p><strong>2. Real-Time Updates:</strong> Get instant notifications on Telegram as soon as a deal goes live, ensuring you never miss out.</p>
         <p><strong>3. Flash Sales:</strong> We share limited-time offers, like ₹1 deals on accessories, that often sell out before the big sales even start.</p>
         <p><strong>4. Community Support:</strong> Our Telegram community shares their own deal finds, helping you save even more.</p>
-        <p><strong>5. No Waiting:</strong> Why wait for June 30 or July 1? Start saving as early as today, June 16, 2025, with Kuldeep Loot Deals!</p>
+        <p><strong>5. No Waiting:</strong> Why wait for June 29 or July 1? Start saving as early as today, <span id="currentDate2">June 17, 2025</span>, with Kuldeep Loot Deals!</p>
         <p>Join our Telegram channel now and get the best Flipkart discounts without waiting for the <strong>Upcoming Flipkart Sale of June 2025</strong> or <strong>Upcoming Flipkart Sale of July 2025</strong>.</p>
 
         <div class="telegram-cta">
@@ -281,7 +311,7 @@
         <p><strong>2. Check Bank Offers:</strong> Flipkart often partners with banks for extra discounts (e.g., 10% off with HDFC cards). Have your card ready.</p>
         <p><strong>3. Join Our Telegram Channel:</strong> We’ll share early updates on sale dates, sneak peeks, and flash deals as soon as they’re announced.</p>
         <p><strong>4. Compare Prices Now:</strong> Use our <a href="index.html">Flipkart Deals Finder</a> to see current prices and decide if waiting for the sale is worth it.</p>
-        <p><strong>5. Set Reminders:</strong> Use the countdown timer above to stay on top of the sale start date, expected around June 30, 2025.</p>
+        <p><strong>5. Set Reminders:</strong> Use the countdown timer above to stay on top of the sale start date, expected around June 29, 2025.</p>
         <p>Don’t want to wait? Join Kuldeep Loot Deals on Telegram to start saving <strong>today</strong>!</p>
 
         <h2>How to Prepare for the Upcoming Flipkart Sale of July 2025</h2>
@@ -322,7 +352,7 @@
         <p><strong>1. Daily Savings:</strong> Get Flipkart discounts every day, not just during sales.</p>
         <p><strong>2. Instant Alerts:</strong> Be the first to know about flash deals and limited-time offers.</p>
         <p><strong>3. Community Insights:</strong> Our Telegram members share their own deal finds, helping you save more.</p>
-        <p><strong>4. Hassle-Free:</strong> No need to wait for June 30 or July 1—start saving as early as today, June 16, 2025!</p>
+        <p><strong>4. Hassle-Free:</strong> No need to wait for June 29 or July 1—start saving as early as today, <span id="currentDate3">June 17, 2025</span>!</p>
         <p><strong>5. Exclusive Offers:</strong> We share deals you won’t find on Flipkart’s website or app.</p>
         <p>Don’t wait for the sale—join Kuldeep Loot Deals on Telegram for the best Flipkart discounts <strong>right now</strong>!</p>
 
@@ -345,15 +375,48 @@
     </div>
 
     <script>
-        // Countdown Timer to June 30, 2025
-        const saleDate = new Date("2025-06-30T00:00:00");
+        // Update dates dynamically
+        function updateDates() {
+            const today = new Date();
+            const istOffset = 5.5 * 60 * 60 * 1000; // IST is UTC+5:30
+            const istDate = new Date(today.getTime() + istOffset);
+
+            const day = istDate.getDate();
+            const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+            const month = monthNames[istDate.getMonth()];
+            const year = istDate.getFullYear();
+            const fullDate = `${month} ${day}, ${year}`; // e.g., "June 17, 2025"
+
+            // Update all date elements
+            document.getElementById('currentDate').textContent = fullDate;
+            document.getElementById('currentDate2').textContent = fullDate;
+            document.getElementById('currentDate3').textContent = fullDate;
+
+            // Update meta description
+            document.querySelector('meta[name="description"]').setAttribute('content', `Get ready for the Upcoming Flipkart Sale of June 2025 and Upcoming Flipkart Sale of July 2025! Expected at June end or July start, these sales offer huge discounts. Join Kuldeep Loot Deals on Telegram for daily Flipkart deals and save today, ${fullDate}!`);
+        }
+        window.onload = updateDates;
+
+        // Countdown Timer for June and July Sales
+        const juneSaleDate = new Date("2025-06-29T00:00:00");
+        const julySaleDate = new Date("2025-07-01T00:00:00");
         const istOffset = 5.5 * 60 * 60 * 1000; // IST is UTC+5:30
-        saleDate.setTime(saleDate.getTime() + istOffset);
+        juneSaleDate.setTime(juneSaleDate.getTime() + istOffset);
+        julySaleDate.setTime(julySaleDate.getTime() + istOffset);
 
         function updateCountdown() {
             const now = new Date();
             const istTime = new Date(now.getTime() + istOffset);
-            const timeLeft = saleDate - istTime;
+            let targetDate = juneSaleDate;
+            let message = "Time Left Until June 29, 2025: ";
+
+            // Switch to July countdown if June date has passed
+            if (istTime > juneSaleDate) {
+                targetDate = julySaleDate;
+                message = "Time Left Until July 1, 2025: ";
+            }
+
+            const timeLeft = targetDate - istTime;
 
             if (timeLeft <= 0) {
                 document.getElementById('saleCountdown').textContent = "The Sale Might Be Live Now! Check Flipkart!";
@@ -364,22 +427,32 @@
             const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
             const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
             const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
-            document.getElementById('saleCountdown').textContent = `Time Left Until June 30, 2025: ${days}d ${hours}h ${minutes}m ${seconds}s`;
+            document.getElementById('saleCountdown').textContent = `${message}${days}d ${hours}h ${minutes}m ${seconds}s`;
         }
         setInterval(updateCountdown, 1000);
         updateCountdown();
 
         // Savings Comparison Tool
         function compareSavings() {
-            const salePrice = parseFloat(document.getElementById('salePrice').value) || 0;
-            const telegramPrice = parseFloat(document.getElementById('telegramPrice').value) || 0;
+            const salePrice = parseFloat(document.getElementById('salePrice').value);
+            const telegramPrice = parseFloat(document.getElementById('telegramPrice').value);
             const resultDiv = document.getElementById('comparisonResult');
-            if (salePrice <= telegramPrice) {
-                resultDiv.textContent = `Result: The sale price (₹${salePrice}) is better or equal! But why wait? Join our Telegram channel for more deals now!`;
-            } else {
-                const savings = salePrice - telegramPrice;
-                resultDiv.textContent = `Result: Our Telegram deal (₹${telegramPrice}) saves you ₹${savings} more than the sale price (₹${salePrice})! Join now!`;
+
+            if (isNaN(salePrice) || isNaN(telegramPrice) || salePrice < 0 || telegramPrice < 0) {
+                resultDiv.textContent = "Please enter valid prices!";
+                resultDiv.classList.remove('active');
+                return;
             }
+
+            const savings = salePrice - telegramPrice;
+            if (savings > 0) {
+                resultDiv.textContent = `You save ₹${savings} by shopping with our Telegram deals today!`;
+            } else if (savings < 0) {
+                resultDiv.textContent = `The sale price is ₹${Math.abs(savings)} cheaper—worth waiting for the sale!`;
+            } else {
+                resultDiv.textContent = "The prices are the same—shop now or wait for the sale!";
+            }
+            resultDiv.classList.add('active');
         }
     </script>
 </body>
