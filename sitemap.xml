@@ -138,4 +138,16 @@
         <changefreq>monthly</changefreq>
         <priority>0.3</priority>
     </url>
+    <url>
+        <loc>https://kuldiplootdeals.com/flipkart-affiliate-guide.html</loc>
+        <lastmod>2025-06-17</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://kuldiplootdeals.com/flipkart-affiliate-guide-extrape.html</loc>
+        <lastmod>2025-06-17</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
 </urlset>
