@@ -3,44 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Prepare for the Upcoming Amazon Sale of June 2025 and Upcoming Amazon Sale of July 2025! Sales are expected at June end or July start. Join Kuldeep Loot Deals on Telegram for daily Amazon discounts—start saving today!">
-    <meta name="keywords" content="Upcoming Amazon Sale of June 2025, Upcoming Amazon Sale of July 2025, Amazon sale 2025, Amazon discounts, Kuldeep Loot Deals, Telegram shopping Amazon, Amazon deals today">
+    <meta name="description" content="Prepare for the Upcoming Amazon Sale of June 2025 and Upcoming Amazon Sale of July 2025! Expected at June end or July start, these sales offer massive discounts. Join Kuldeep Loot Deals on Telegram for daily Amazon deals and save today, June 17, 2025!">
+    <meta name="keywords" content="Upcoming Amazon Sale of June 2025, Upcoming Amazon Sale of July 2025, Amazon sale 2025, Amazon Prime Day 2025 deals, Amazon discounts, Kuldeep Loot Deals, Telegram shopping Amazon, Amazon deals today, best Amazon deals 2025">
     <meta name="author" content="Kuldeep Loot Deals">
     <meta name="robots" content="index, follow">
-    <title>Upcoming Amazon Sale of June & July 2025: Save Now!</title>
-    <script type="application/ld+json">
+    <title>Upcoming Amazon Sale of June & July 2025: Save Big Now!</title>
+    <script type="application/ld+json" id="juneSaleSchema">
     {
         "@context": "https://schema.org",
-        "@type": "Event",
+        "@type": "SaleEvent",
         "name": "Upcoming Amazon Sale of June 2025",
         "description": "Get ready for the Upcoming Amazon Sale of June 2025, expected at the end of June. Join Kuldeep Loot Deals on Telegram for daily Amazon discounts!",
-        "startDate": "2025-06-30",
-        "endDate": "2025-07-02",
+        "startDate": "2025-06-29",
+        "endDate": "2025-06-30",
         "location": {
             "@type": "VirtualLocation",
-            "url": "https://amazon.in"
+            "name": "Amazon India Online Sale",
+            "url": "https://t.me/Kuldip_Loot_Deals"
         },
         "organizer": {
             "@type": "Organization",
-            "name": "Amazon"
+            "name": "Amazon",
+            "url": "https://amazon.in"
+        },
+        "offers": {
+            "@type": "Offer",
+            "price": "999",
+            "priceCurrency": "INR",
+            "availability": "https://schema.org/InStock"
         }
     }
     </script>
-    <script type="application/ld+json">
+    <script type="application/ld+json" id="julySaleSchema">
     {
         "@context": "https://schema.org",
-        "@type": "Event",
+        "@type": "SaleEvent",
         "name": "Upcoming Amazon Sale of July 2025",
         "description": "Prepare for the Upcoming Amazon Sale of July 2025, expected at the start of July. Join Kuldeep Loot Deals on Telegram for daily Amazon deals!",
         "startDate": "2025-07-01",
         "endDate": "2025-07-03",
         "location": {
             "@type": "VirtualLocation",
-            "url": "https://amazon.in"
+            "name": "Amazon India Online Sale",
+            "url": "https://t.me/Kuldip_Loot_Deals"
         },
         "organizer": {
             "@type": "Organization",
-            "name": "Amazon"
+            "name": "Amazon",
+            "url": "https://amazon.in"
+        },
+        "offers": {
+            "@type": "Offer",
+            "price": "499",
+            "priceCurrency": "INR",
+            "availability": "https://schema.org/InStock"
         }
     }
     </script>
@@ -164,6 +180,7 @@
             cursor: pointer;
             margin: 0 10px;
             font-weight: bold;
+            transition: background 0.3s ease;
         }
         .game-options button:hover {
             background: #0a4b78;
@@ -172,6 +189,12 @@
             margin-top: 20px;
             font-size: 18px;
             font-weight: bold;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+        #gameResult.active {
+            background: #146EB4;
         }
         .telegram-cta {
             text-align: center;
@@ -194,6 +217,13 @@
             background: #007bb5;
             transform: scale(1.05);
         }
+        a {
+            color: #146EB4;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
@@ -205,19 +235,19 @@
     </header>
     <div class="container">
         <h2>Upcoming Amazon Sale of June 2025 & July 2025: Start Saving Now!</h2>
-        <p>Get ready, Amazon shoppers! The <strong>Upcoming Amazon Sale of June 2025</strong> and <strong>Upcoming Amazon Sale of July 2025</strong> are on the horizon, expected to start at the end of June or the beginning of July 2025. These sales will bring massive discounts on electronics, fashion, home essentials, and more. But why wait? Join <strong>Kuldeep Loot Deals</strong> on Telegram at <a href="https://t.me/Kuldip_Loot_Deals">https://t.me/Kuldip_Loot_Deals</a> to get the best Amazon discounts every day, starting today, June 16, 2025!</p>
+        <p>Get ready, Amazon shoppers! The <strong>Upcoming Amazon Sale of June 2025</strong> and <strong>Upcoming Amazon Sale of July 2025</strong> are on the horizon, expected to start at the end of June or the beginning of July 2025. These sales will bring massive discounts on electronics, fashion, home essentials, and more. But why wait? Join <strong>Kuldeep Loot Deals</strong> on Telegram at <a href="https://t.me/Kuldip_Loot_Deals">https://t.me/Kuldip_Loot_Deals</a> to get the best Amazon discounts every day, starting today, <span id="currentDate">June 17, 2025</span>!</p>
 
         <div class="telegram-cta">
             <a href="https://t.me/Kuldip_Loot_Deals" class="telegram-btn">Join for Daily Amazon Discounts</a>
         </div>
 
         <h2>Countdown to the Upcoming Amazon Sale of June 2025</h2>
-        <div class="sale-countdown" id="saleCountdown">Time Left Until June 30, 2025: Loading...</div>
-        <p>The <strong>Upcoming Amazon Sale of June 2025</strong> is expected to launch around June 30, 2025, offering incredible deals across various categories, such as:</p>
+        <div class="sale-countdown" id="saleCountdown">Time Left Until June 29, 2025: Loading...</div>
+        <p>The <strong>Upcoming Amazon Sale of June 2025</strong> is expected to launch around June 29, 2025, offering incredible deals across various categories, such as:</p>
         <p><strong>1. Electronics:</strong> Up to 60% off on laptops, smartwatches, and headphones—think ₹999 deals on JBL earbuds!</p>
         <p><strong>2. Fashion:</strong> 70% off on men’s and women’s clothing, including ethnic wear and casuals.</p>
         <p><strong>3. Books:</strong> Huge discounts on bestsellers, with books starting at ₹99 during the sale.</p>
-        <p>Don’t want to wait until June 30? Join our Telegram channel to grab similar Amazon discounts <strong>today</strong>!</p>
+        <p>Don’t want to wait until June 29? Join our Telegram channel to grab similar Amazon discounts <strong>today</strong>!</p>
 
         <h2>Upcoming Amazon Sale of July 2025: What’s Coming</h2>
         <p>Right after, the <strong>Upcoming Amazon Sale of July 2025</strong> is expected to start around July 1, 2025, and may run for a few days. This sale could align with monsoon promotions, offering even better deals. Here’s what to expect:</p>
@@ -254,12 +284,12 @@
         <p>Can’t wait for these deals? Join our Telegram channel to get similar Amazon discounts <strong>today</strong>!</p>
 
         <h2>Why Wait for the Sale? Save Daily with Kuldeep Loot Deals!</h2>
-        <p>The <strong>Upcoming Amazon Sale of June 2025</strong> and <strong>Upcoming Amazon Sale of July 2025</strong> will offer great savings, but waiting until June 30 or July 1 means missing out on deals today. At Kuldeep Loot Deals, we share the best Amazon discounts daily on our Telegram channel. Here’s why you should join us now:</p>
+        <p>The <strong>Upcoming Amazon Sale of June 2025</strong> and <strong>Upcoming Amazon Sale of July 2025</strong> will offer great savings, but waiting until June 29 or July 1 means missing out on deals today. At Kuldeep Loot Deals, we share the best Amazon discounts daily on our Telegram channel. Here’s why you should join us now:</p>
         <p><strong>1. Daily Amazon Discounts:</strong> We post deals every day, often matching sale prices—like 60% off on electronics right now.</p>
         <p><strong>2. Instant Notifications:</strong> Get real-time alerts on Telegram as soon as a deal goes live, so you never miss out.</p>
         <p><strong>3. Flash Deals:</strong> We share limited-time offers, like ₹1 deals on phone cases, that sell out fast.</p>
         <p><strong>4. Community Support:</strong> Our Telegram community shares their own deal finds, helping you save more.</p>
-        <p><strong>5. Start Saving Now:</strong> Why wait for the sale? Start saving as early as today, June 16, 2025, with Kuldeep Loot Deals!</p>
+        <p><strong>5. Start Saving Now:</strong> Why wait for the sale? Start saving as early as today, <span id="currentDate2">June 17, 2025</span>, with Kuldeep Loot Deals!</p>
         <p>Join our Telegram channel at <a href="https://t.me/Kuldip_Loot_Deals">https://t.me/Kuldip_Loot_Deals</a> and get the best Amazon discounts without waiting for the <strong>Upcoming Amazon Sale of June 2025</strong> or <strong>Upcoming Amazon Sale of July 2025</strong>.</p>
 
         <div class="telegram-cta">
@@ -271,7 +301,7 @@
         <p><strong>1. Build Your Wishlist:</strong> Add items to your Amazon wishlist now to check out quickly during the sale.</p>
         <p><strong>2. Check for Bank Offers:</strong> Amazon often offers extra discounts with bank cards (e.g., 10% off with SBI cards). Keep your card ready.</p>
         <p><strong>3. Join Our Telegram Channel:</strong> We’ll share early updates on sale dates and flash deals as soon as they’re announced.</p>
-        <p><strong>4. Set Reminders:</strong> Use the countdown timer above to track the sale start date, expected around June 30, 2025.</p>
+        <p><strong>4. Set Reminders:</strong> Use the countdown timer above to track the sale start date, expected around June 29, 2025.</p>
         <p><strong>5. Compare Prices:</strong> Check current prices on Amazon to see if waiting for the sale is worth it—or grab a deal now via Telegram!</p>
         <p>Don’t want to wait? Join Kuldeep Loot Deals on Telegram to start saving <strong>today</strong>!</p>
 
@@ -313,7 +343,7 @@
         <p><strong>1. Daily Savings:</strong> Get Amazon discounts every day, not just during sales.</p>
         <p><strong>2. Instant Alerts:</strong> Be the first to know about lightning deals and limited-time offers.</p>
         <p><strong>3. Community Insights:</strong> Our Telegram members share their own deal finds, helping you save more.</p>
-        <p><strong>4. No Waiting:</strong> Start saving today, June 16, 2025—don’t wait for June 30 or July 1!</p>
+        <p><strong>4. No Waiting:</strong> Start saving today, <span id="currentDate3">June 17, 2025</span>—don’t wait for June 29 or July 1!</p>
         <p><strong>5. Exclusive Offers:</strong> We share Amazon deals you won’t find on their website or app.</p>
         <p>Don’t wait for the sale—join Kuldeep Loot Deals on Telegram for the best Amazon discounts <strong>right now</strong>!</p>
 
@@ -323,15 +353,48 @@
     </div>
 
     <script>
-        // Countdown Timer to June 30, 2025
-        const saleDate = new Date("2025-06-30T00:00:00");
+        // Update dates dynamically
+        function updateDates() {
+            const today = new Date();
+            const istOffset = 5.5 * 60 * 60 * 1000; // IST is UTC+5:30
+            const istDate = new Date(today.getTime() + istOffset);
+
+            const day = istDate.getDate();
+            const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+            const month = monthNames[istDate.getMonth()];
+            const year = istDate.getFullYear();
+            const fullDate = `${month} ${day}, ${year}`; // e.g., "June 17, 2025"
+
+            // Update all date elements
+            document.getElementById('currentDate').textContent = fullDate;
+            document.getElementById('currentDate2').textContent = fullDate;
+            document.getElementById('currentDate3').textContent = fullDate;
+
+            // Update meta description
+            document.querySelector('meta[name="description"]').setAttribute('content', `Prepare for the Upcoming Amazon Sale of June 2025 and Upcoming Amazon Sale of July 2025! Expected at June end or July start, these sales offer massive discounts. Join Kuldeep Loot Deals on Telegram for daily Amazon deals and save today, ${fullDate}!`);
+        }
+        window.onload = updateDates;
+
+        // Countdown Timer for June and July Sales
+        const juneSaleDate = new Date("2025-06-29T00:00:00");
+        const julySaleDate = new Date("2025-07-01T00:00:00");
         const istOffset = 5.5 * 60 * 60 * 1000; // IST is UTC+5:30
-        saleDate.setTime(saleDate.getTime() + istOffset);
+        juneSaleDate.setTime(juneSaleDate.getTime() + istOffset);
+        julySaleDate.setTime(julySaleDate.getTime() + istOffset);
 
         function updateCountdown() {
             const now = new Date();
             const istTime = new Date(now.getTime() + istOffset);
-            const timeLeft = saleDate - istTime;
+            let targetDate = juneSaleDate;
+            let message = "Time Left Until June 29, 2025: ";
+
+            // Switch to July countdown if June date has passed
+            if (istTime > juneSaleDate) {
+                targetDate = julySaleDate;
+                message = "Time Left Until July 1, 2025: ";
+            }
+
+            const timeLeft = targetDate - istTime;
 
             if (timeLeft <= 0) {
                 document.getElementById('saleCountdown').textContent = "The Sale Might Be Live Now! Check Amazon!";
@@ -342,7 +405,7 @@
             const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
             const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
             const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
-            document.getElementById('saleCountdown').textContent = `Time Left Until June 30, 2025: ${days}d ${hours}h ${minutes}m ${seconds}s`;
+            document.getElementById('saleCountdown').textContent = `${message}${days}d ${hours}h ${minutes}m ${seconds}s`;
         }
         setInterval(updateCountdown, 1000);
         updateCountdown();
@@ -350,6 +413,7 @@
         // Deal Match Game
         function matchDeal(category) {
             const resultDiv = document.getElementById('gameResult');
+            resultDiv.classList.add('active'); // Add visual feedback
             if (category === 'electronics') {
                 resultDiv.innerHTML = 'You’ll love our current deal: JBL Earbuds for ₹999 (60% off)! Join our <a href="https://t.me/Kuldip_Loot_Deals" style="color: #FF9900;">Telegram channel</a> to grab it now!';
             } else if (category === 'fashion') {
