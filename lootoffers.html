@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Discover daily loot deals on Flipkart, Amazon, Myntra, and Shopify with Kuldeep Loot Deals. Get 70% off BOAt earphones, ₹999 off Mi Band 6, and more as of June 20, 2025!">
-  <meta name="keywords" content="Kuldeep Loot Deals, Flipkart loot offers, Amazon loot deals, Myntra loot offers, Shopify loot deals, daily deals 2025, best loot offers India">
+  <meta name="description" content="Explore daily loot offers from Flipkart, Amazon, Myntra, and Shopify with Kuldeep Loot Deals. Find shoes under ₹400 on Flipkart, dresses under ₹499 on Myntra, and more as of June 20, 2025!">
+  <meta name="keywords" content="Kuldeep Loot Deals, Flipkart loot deals, Flipkart offers, Amazon best deals, Amazon loot offers, Myntra loot deals, Myntra discounts, Shopify loot offers, daily deals 2025, best loot offers India">
   <meta name="robots" content="index, follow">
   <title>Kuldeep Loot Deals: Daily Flipkart, Amazon, Myntra & Shopify Loot Offers</title>
   <style>
@@ -86,6 +86,8 @@
       border: none;
       border-radius: 4px;
       cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
     }
 
     footer {
@@ -109,54 +111,54 @@
       "itemListElement": [
         {
           "@type": "Product",
-          "name": "BOAt Earphones",
-          "image": "https://example.com/boat-earphones.jpg",
-          "description": "BOAt Earphones with 70% off in Flipkart Loot Deal.",
+          "name": "Shoes under ₹400",
+          "image": "https://example.com/flipkart-shoes.jpg",
+          "description": "Affordable shoes under ₹400 in Flipkart loot deals.",
           "offers": {
             "@type": "Offer",
-            "price": "1499",
+            "price": "399",
             "priceCurrency": "INR",
             "availability": "https://schema.org/InStock",
-            "url": "https://earnkaro.com?r=2796477&fname=kuldip+teli&url=https://www.flipkart.com/boat-earphones"
+            "url": "https://www.flipkart.com/shoes"
           }
         },
         {
           "@type": "Product",
-          "name": "Mi Smart Band 6",
-          "image": "https://m.media-amazon.com/images/I/61TnX0PmqES._SL1500_.jpg",
-          "description": "Mi Smart Band 6 with flat ₹999 off in Amazon Special Offer.",
+          "name": "Electronics under ₹1000",
+          "image": "https://example.com/amazon-electronics.jpg",
+          "description": "Best electronics deals under ₹1000 on Amazon.",
           "offers": {
             "@type": "Offer",
-            "price": "2499",
+            "price": "999",
             "priceCurrency": "INR",
             "availability": "https://schema.org/InStock",
-            "url": "https://www.amazon.in/dp/B08JRX4G4C?tag=youraffiliateid-21"
+            "url": "https://www.amazon.in/electronics"
           }
         },
         {
           "@type": "Product",
-          "name": "Sassafras Dress",
-          "image": "https://example.com/sassafras-dress.jpg",
-          "description": "Sassafras Dress under ₹499 in Myntra Style Loot.",
+          "name": "Dresses under ₹499",
+          "image": "https://example.com/myntra-dresses.jpg",
+          "description": "Stylish dresses under ₹499 in Myntra loot offers.",
           "offers": {
             "@type": "Offer",
             "price": "499",
             "priceCurrency": "INR",
             "availability": "https://schema.org/InStock",
-            "url": "https://www.myntra.com/sassafras-dress"
+            "url": "https://www.myntra.com/dresses"
           }
         },
         {
           "@type": "Product",
-          "name": "Printed T-Shirts",
-          "image": "https://example.com/printed-tshirts.jpg",
-          "description": "Printed T-Shirts just ₹299 in Shopify Store Desi Designs.",
+          "name": "T-Shirts under ₹300",
+          "image": "https://example.com/shopify-tshirts.jpg",
+          "description": "Trendy t-shirts under ₹300 in Shopify loot deals.",
           "offers": {
             "@type": "Offer",
             "price": "299",
             "priceCurrency": "INR",
             "availability": "https://schema.org/InStock",
-            "url": "https://www.shopify.com/printed-tshirts"
+            "url": "https://www.shopify.com/tshirts"
           }
         }
       ]
@@ -170,51 +172,98 @@
   </header>
 
   <nav class="tabs">
-    <button class="tab active">Flipkart</button>
-    <button class="tab">Amazon</button>
-    <button class="tab">Myntra</button>
-    <button class="tab">Shopify</button>
+    <button class="tab active" onclick="showTab('flipkart')">Flipkart</button>
+    <button class="tab" onclick="showTab('amazon')">Amazon</button>
+    <button class="tab" onclick="showTab('myntra')">Myntra</button>
+    <button class="tab" onclick="showTab('shopify')">Shopify</button>
   </nav>
 
-  <main class="deals">
+  <main class="deals" id="dealsContainer">
+    <!-- Initial content (Flipkart) -->
     <div class="deal-card">
-      <h3>BOAt Earphones – 70% Off</h3>
-      <p>Flipkart Loot Deal – Limited Time</p>
-      <a href="https://earnkaro.com?r=2796477&fname=kuldip+teli&url=https://www.flipkart.com/boat-earphones" class="btn">Grab Deal</a>
+      <h3>Shoes under ₹400 – Flipkart Loot Deal</h3>
+      <p>Grab the best Flipkart offers on stylish shoes!</p>
+      <a href="https://www.flipkart.com/shoes" class="btn">Buy Now</a>
     </div>
     <div class="deal-card">
-      <img src="https://m.media-amazon.com/images/I/61TnX0PmqES._SL1500_.jpg" alt="Mi Smart Band 6" />
-      <h3>Mi Smart Band 6 – Flat ₹999 Off</h3>
-      <p>Amazon Special Offer</p>
-      <a href="https://www.amazon.in/dp/B08JRX4G4C?tag=youraffiliateid-21" class="btn">Buy Now</a>
-    </div>
-    <div class="deal-card">
-      <h3>Sassafras Dress – Under ₹499</h3>
-      <p>Myntra Style Loot</p>
-      <a href="https://www.myntra.com/sassafras-dress" class="btn">View Deal</a>
-    </div>
-    <div class="deal-card">
-      <h3>Printed T-Shirts – Just ₹299</h3>
-      <p>Shopify Store – Desi Designs</p>
-      <a href="https://www.shopify.com/printed-tshirts" class="btn">Shop Now</a>
+      <h3>Electronics under ₹500 – Flipkart Discounts</h3>
+      <p>Amazing Flipkart loot deals on gadgets!</p>
+      <a href="https://www.flipkart.com/electronics" class="btn">Shop Now</a>
     </div>
   </main>
 
   <footer>
     <p>Follow for daily loots 👇</p>
-    <a href="https://instagram.com/@justtech_yt">Instagram</a> | <a href="https://youtube.com/@justtechop">YouTube</a>
+    <a href="https://www.instagram.com/justtech_yt?igsh=NGV4a3c2MnZycXVh">Instagram</a> | <a href="https://youtube.com/@justtechop">YouTube</a>
     <p>© 2025 Kuldeep Loot Deal. All rights reserved.</p>
   </footer>
 
   <script>
-    // Basic tab functionality (optional enhancement)
-    document.querySelectorAll('.tab').forEach(tab => {
-      tab.addEventListener('click', () => {
-        document.querySelector('.tab.active').classList.remove('active');
-        tab.classList.add('active');
-        // Add logic to filter deals by tab if needed (e.g., show only Flipkart deals)
-      });
-    });
+    function showTab(platform) {
+      const tabs = document.querySelectorAll('.tab');
+      tabs.forEach(tab => tab.classList.remove('active'));
+      document.querySelector(`.tab[onclick="showTab('${platform}')"]`).classList.add('active');
+
+      let dealsContent = '';
+      if (platform === 'flipkart') {
+        dealsContent = `
+          <div class="deal-card">
+            <h3>Shoes under ₹400 – Flipkart Loot Deal</h3>
+            <p>Grab the best Flipkart offers on stylish shoes!</p>
+            <a href="https://www.flipkart.com/shoes" class="btn">Buy Now</a>
+          </div>
+          <div class="deal-card">
+            <h3>Electronics under ₹500 – Flipkart Discounts</h3>
+            <p>Amazing Flipkart loot deals on gadgets!</p>
+            <a href="https://www.flipkart.com/electronics" class="btn">Shop Now</a>
+          </div>
+        `;
+      } else if (platform === 'amazon') {
+        dealsContent = `
+          <div class="deal-card">
+            <h3>Electronics under ₹1000 – Amazon Best Deals</h3>
+            <p>Explore Amazon loot offers on top electronics!</p>
+            <a href="https://www.amazon.in/electronics" class="btn">Buy Now</a>
+          </div>
+          <div class="deal-card">
+            <h3>Books under ₹200 – Amazon Offers</h3>
+            <p>Great Amazon best deals on bestsellers!</p>
+            <a href="https://www.amazon.in/books" class="btn">Shop Now</a>
+          </div>
+        `;
+      } else if (platform === 'myntra') {
+        dealsContent = `
+          <div class="deal-card">
+            <h3>Dresses under ₹499 – Myntra Loot Deal</h3>
+            <p>Find the best Myntra discounts on dresses!</p>
+            <a href="https://www.myntra.com/dresses" class="btn">Buy Now</a>
+          </div>
+          <div class="deal-card">
+            <h3>Footwear under ₹600 – Myntra Offers</h3>
+            <p>Top Myntra loot deals on shoes!</p>
+            <a href="https://www.myntra.com/footwear" class="btn">Shop Now</a>
+          </div>
+        `;
+      } else if (platform === 'shopify') {
+        dealsContent = `
+          <div class="deal-card">
+            <h3>T-Shirts under ₹300 – Shopify Loot Deal</h3>
+            <p>Check out Shopify loot offers on trendy t-shirts!</p>
+            <a href="https://www.shopify.com/tshirts" class="btn">Buy Now</a>
+          </div>
+          <div class="deal-card">
+            <h3>Accessories under ₹400 – Shopify Deals</h3>
+            <p>Great Shopify loot deals on accessories!</p>
+            <a href="https://www.shopify.com/accessories" class="btn">Shop Now</a>
+          </div>
+        `;
+      }
+
+      document.getElementById('dealsContainer').innerHTML = dealsContent;
+    }
+
+    // Initialize with Flipkart tab active
+    window.onload = () => showTab('flipkart');
   </script>
 </body>
 </html>
